@@ -1,12 +1,12 @@
-##URIRating
+URIRating
 =========
 
-####Opis:
+Opis:
 Jednostavna Symfony backend aplikacija za zaprimanje glasova o zadanom 'uri' koja se sastoji od dvije API metode, predaj ocjenu i dohvati trenutnu srednju ocjenu. 
 Aplikacija na svojoj početnoj stranici ima implementiranu skriptu koja koristi ova dva API-ja kako bi omogućila sustav glasanja i prikaza trenutnog stanja.
 
 
-####Upute za instalaciju:
+Upute za instalaciju:
 
 Podesiti MySQL na poslužitelju i po potrebi promijeniti sljedeće podatke u web aplikaciji:
 /app/config/parameters.yml
@@ -28,7 +28,7 @@ php app/console doctrine:database:create
 php app/console doctrine:schema:update --force
 
 
-####Upute za korištenje:
+Upute za korištenje:
 
 U web pregledniku otvoriti 'http://localhost:8000/'. 
 
