@@ -1,0 +1,76 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: klezaic
+ * Date: 22.04.17.
+ * Time: 22:25
+ */
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="URIRatingAvg")
+ */
+class URIRatingAvg
+{
+    /**
+     * @ORM\Column(type="string", length=255, nullable=false)
+     * @ORM\Id
+     */
+    private $uri;
+
+    /**
+     * @ORM\Column(type="decimal")
+     */
+    private $avgRating;
+
+
+    /**
+     * Set uri
+     *
+     * @param string $uri
+     * @return URIRatingAvg
+     */
+    public function setUri($uri)
+    {
+        $this->uri = $uri;
+
+        return $this;
+    }
+
+    /**
+     * Get uri
+     *
+     * @return string 
+     */
+    public function getUri()
+    {
+        return $this->uri;
+    }
+
+    /**
+     * Set avgRating
+     *
+     * @param string $avgRating
+     * @return URIRatingAvg
+     */
+    public function setAvgRating($avgRating)
+    {
+        $this->avgRating = $avgRating;
+
+        return $this;
+    }
+
+    /**
+     * Get avgRating
+     *
+     * @return string 
+     */
+    public function getAvgRating()
+    {
+        return $this->avgRating;
+    }
+}
