@@ -5,27 +5,33 @@ Opis:
 Jednostavna Symfony backend aplikacija za zaprimanje glasova o zadanom 'uri' koja se sastoji od dvije API metode, predaj ocjenu i dohvati trenutnu srednju ocjenu. 
 Aplikacija na svojoj početnoj stranici ima implementiranu skriptu koja koristi ova dva API-ja kako bi omogućila sustav glasanja i prikaza trenutnog stanja.
 
-
 Upute za instalaciju:
 
-Podesiti MySQL na poslužitelju i po potrebi promijeniti sljedeće podatke u web aplikaciji:
-/app/config/parameters.yml
-	database_host: 127.0.0.1
-	database_port: null	
-	database_name: URIRating
+Podesiti MySQL na poslužitelju i po potrebi promijeniti sljedeće podatke u web aplikaciji:<br>
+/app/config/parameters.yml  
+	database_host: 127.0.0.1  
+	database_port: null  
+	database_name: URIRating   
 	database_user: root
 	database_password: root
 
 Nakon toga pozicionirati se u korijensku datoteku projekta, te pokrenuti sljedeće naredbe:
 
+
 composer install
 
-php app/console server:run
-php app/console doctrine:generate:entities AppBundle/Entity/URIRating
-php app/console doctrine:generate:entities AppBundle/Entity/URIRatingSum
-php app/console doctrine:database:drop --force
-php app/console doctrine:database:create
-php app/console doctrine:schema:update --force
+php app/console server:run  
+
+php app/console doctrine:generate:entities AppBundle/Entity/URIRating  
+
+php app/console doctrine:generate:entities AppBundle/Entity/URIRatingSum  
+
+php app/console doctrine:database:drop --force  
+
+php app/console doctrine:database:create  
+
+php app/console doctrine:schema:update --force  
+
 
 
 Upute za korištenje:
