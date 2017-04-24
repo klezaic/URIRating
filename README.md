@@ -51,8 +51,7 @@ U web pregledniku otvoriti 'http://localhost:8000/'.
 		 {"visitor_id": "some_visitor_id","uri": "some_uri","rating": integer}  
 		 -"some_visitor_id - mora biti oblika VARCHAR 0-255 znakova  
 		 -"some_uri - mora biti oblika VARCHAR 0-255 znakova  
-		 -"rating" - mora biti cjelobrojni broj iz intervala 0-10  
-		 
+		 -"rating" - mora biti cjelobrojni broj iz intervala 0-10  	 
 	-Zadani API vraća JSON objekt u jednom od sljedećih oblika:  
 		-{"status":"success|failure","uri":"traženi_uri","rating":pohranjena_ocjena"score":"srednja_vrijednost_ocjena}  
 		-{"error":"Not valid JSON"}  
